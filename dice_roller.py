@@ -7,8 +7,11 @@ if __name__== "__main__":
 #importiamo la funzione casuale
 import random
 
-#roll sarà una scelta casuale dei numeri da 1 a 6
-roll = random.randint(1,6)
-
-#stampiamo il valore di roll
-print(f'Hai fatto {roll}!')
+#creiamo una simulazione del lancio di due dadi dove verrà simulata e addizionata la scelta di due numeri casuali compresi tra 1 e 6
+dice_rolls = 2
+dice_sum = 0
+for i in range(0,dice_rolls):
+  roll = random.randint(1,6)
+  dice_sum += roll
+  print(f'Hai fatto {roll}')
+print(f'Hai fatto un totale di {dice_sum}')
